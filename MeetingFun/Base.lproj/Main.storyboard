@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter some Text n00B" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y9W-8j-ePC">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKa-vm-bcg">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DR8-nI-xXd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Click Me!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1P8-5O-wWY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y9W-8j-ePC" secondAttribute="trailing" constant="20" id="3W8-4a-BUH"/>
+                            <constraint firstItem="y9W-8j-ePC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="96" id="8F2-7U-aPI"/>
+                            <constraint firstItem="DR8-nI-xXd" firstAttribute="top" secondItem="iKa-vm-bcg" secondAttribute="bottom" constant="49" id="9dV-aT-IIy"/>
+                            <constraint firstItem="DR8-nI-xXd" firstAttribute="centerX" secondItem="y9W-8j-ePC" secondAttribute="centerX" id="LZV-49-qnP"/>
+                            <constraint firstItem="y9W-8j-ePC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="U6D-MI-yYN"/>
+                            <constraint firstItem="iKa-vm-bcg" firstAttribute="centerX" secondItem="y9W-8j-ePC" secondAttribute="centerX" id="cP4-bB-BtG"/>
+                            <constraint firstItem="iKa-vm-bcg" firstAttribute="top" secondItem="y9W-8j-ePC" secondAttribute="bottom" constant="49" id="r8X-27-xsb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="y9W-8j-ePC"/>
+                                <exclude reference="iKa-vm-bcg"/>
+                                <exclude reference="DR8-nI-xXd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3W8-4a-BUH"/>
+                                <exclude reference="8F2-7U-aPI"/>
+                                <exclude reference="U6D-MI-yYN"/>
+                                <exclude reference="cP4-bB-BtG"/>
+                                <exclude reference="r8X-27-xsb"/>
+                                <exclude reference="9dV-aT-IIy"/>
+                                <exclude reference="LZV-49-qnP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="y9W-8j-ePC"/>
+                                <include reference="iKa-vm-bcg"/>
+                                <include reference="DR8-nI-xXd"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3W8-4a-BUH"/>
+                                <include reference="8F2-7U-aPI"/>
+                                <include reference="U6D-MI-yYN"/>
+                                <include reference="cP4-bB-BtG"/>
+                                <include reference="r8X-27-xsb"/>
+                                <include reference="9dV-aT-IIy"/>
+                                <include reference="LZV-49-qnP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="iKa-vm-bcg" id="KUL-p9-6Dx"/>
+                        <outlet property="textField" destination="y9W-8j-ePC" id="uYW-9Q-uac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
